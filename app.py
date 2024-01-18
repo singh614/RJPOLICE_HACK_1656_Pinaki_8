@@ -79,7 +79,7 @@ def predict():
             if prediction[0][0] < 0.5:  # Adjust the threshold as needed
                 result = "Fake"
                 watermark_text = 'Deep Fake'
-                add_watermark(file_path, "/Users/abhinandansingh/RajPolice/flask_deep/static/uploads/DeepFake.jpg", watermark_text)
+                add_watermark(file_path, "/Users/abhinandansingh/RJPOLICE_HACK_1656_PINAKI_8/static/uploads/DeepFake.jpg", watermark_text)
             else:
                 result = "Real"
                 
