@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+    <title>Deep Fake Detection</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <style>
+        /* Add responsive image class */
+        img {
+            max-width: 300px;
+            height: auto;
+            display: block; /* Remove extra space below image */
+            margin: auto; /* Center the image */
+        }
+    </style>
+
+</head>
+<body>
+    <h1>Deep Fake Detection - Result</h1>
+    <p>Image Prediction: {{ result }}</p>
+    <img src="{{ url_for('static', filename='uploads/' + file.filename) }}" alt="Uploaded Image">
+</body>
+</html>
